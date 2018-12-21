@@ -1,6 +1,10 @@
 # SIMPLE REACTJS/WEBPACK4/TYPESCRIPT COMPONENT STARTER
-I saw a lot of react application starters out on the internet, like create-react-app, but not a lot of basic out of the box simple component templates (or ones that were update to date with webpack 4, react 16,and typescript 3).
+I saw a lot of react application starters out on the internet, like create-react-app, but not a lot of basic out of the box simple component templates for people looking to create their own UX libraries (or ones that were update to date with webpack 4, react 16,and typescript 3).  I'm a big fan of decoupled UX that is independently deployable and testable without depending on the consuming app.  React is an external dependency that needs to be loaded by the consuming app - it's not part of the build for this project.  This basic component starter only contained 3 scripts:
 
-I'm just posting this here for now as a start - and might consider throwing this into a generator if it becomes popular.  I'll add testing tomorrow.
+- A dev build *of the component only*
+- A prod build *of the component only*
+- A storybook server and sample story a a test for rendering the component 
+
+I'm just posting this here for now as a start - and might consider throwing this into a generator if it becomes popular.  I'll add testing tomorrow and possibly SASS - that's as far as I would intended to take this project as I would like to keep it simple.
 
 *Ignore the references to Julian for now, that's my son and this whole template started because I'm helping him make a video game.* :laughing:
