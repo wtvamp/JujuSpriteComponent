@@ -3,7 +3,7 @@ I saw a lot of react application starters out on the internet, like create-react
 
 - A dev build *of the component only*
 - A prod build *of the component only*
-- A storybook server and sample story a a test for rendering the component 
+- A storybook server and sample story as a test for rendering the component 
 
 I'm just posting this here for now as a start - and might consider throwing this into a generator if it becomes popular.  I'll add testing tomorrow and possibly SASS - that's as far as I would intended to take this project as I would like to keep it simple.
 
