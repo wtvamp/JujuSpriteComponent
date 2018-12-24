@@ -2,7 +2,7 @@
   "name": "jujuspritecomponent",
   "version": "1.0.0",
   "description": "A component that renders an animation of Julian walking",
-  "main": "index.js",
+  "main": "dist/jujuspritecomponent.js",
   "files": [
     "/dist"
   ],
