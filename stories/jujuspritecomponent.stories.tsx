@@ -6,8 +6,8 @@ import { Julian } from '../src/jujuspritecomponent';
 storiesOf('Julian', module)
   .addDecorator(withInfo)
   .add(
-    'No name rendered', 
-    () => <Julian></Julian>,
+    'No name rendered',   
+    () => <Julian />,
     { info: { test: "dodes this work?", header: true, inline: true } }
   )
   .add(
