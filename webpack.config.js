@@ -17,10 +17,15 @@ module.exports = {
                 loader: 'awesome-typescript-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.scss$/,
+                loaders: ["style-loader", "css-loader", "sass-loader"],
+                exclude: /node_modules/,
+            }
         ]
     },
     resolve: {
-        extensions: [".tsx", ".ts", ".js"]
+        extensions: [".tsx", ".ts", ".js", ".scss"]
     },
     externals: {
         // Don't bundle react or react-dom
