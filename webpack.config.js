@@ -13,13 +13,17 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
-                loader: 'awesome-typescript-loader',
+                test: /\.scss?$/,
+                loaders: [
+                    "style-loader", 
+                    "typings-for-css-modules-loader?modules&sass&namedExport&camelCase", 
+                    "sass-loader"
+                ],
                 exclude: /node_modules/,
             },
             {
-                test: /\.scss$/,
-                loaders: ["style-loader", "css-loader", "sass-loader"],
+                test: /\.tsx?$/,
+                loader: 'awesome-typescript-loader',
                 exclude: /node_modules/,
             }
         ]

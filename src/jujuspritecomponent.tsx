@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styles } from './src/jujuspritecomponent.scss';
+import * as styles from './jujuspritecomponent.scss';
 
 interface Child {
     name?: string;
