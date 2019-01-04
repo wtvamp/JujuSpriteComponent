@@ -6,9 +6,13 @@ module.exports = (baseConfig, env, config) => {
     loader: require.resolve('awesome-typescript-loader'),
   },
   {
-    test: /\.scss$/,
-    loaders: ["style-loader", "css-loader", "sass-loader"],
-    include: path.resolve(__dirname, "../src/jujuspritecomponent.scss")
+    test: /\.scss?$/,
+    loaders: [
+        "style-loader", 
+        "typings-for-css-modules-loader?modules&sass&namedExport&camelCase", 
+        "sass-loader"
+    ],
+    exclude: /node_modules/,
   }
   );
   config.plugins.push(new TSDocgenPlugin());
