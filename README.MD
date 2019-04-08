@@ -5,6 +5,6 @@ I saw a lot of react application starters out on the internet, like create-react
 - A prod build *of the component only*
 - A storybook server and sample story as a test for rendering the component 
 
-I'm just posting this here for now as a start - and might consider throwing this into a generator if it becomes popular.  I'll add testing tomorrow and possibly SASS - that's as far as I would intended to take this project as I would like to keep it simple.
+I'm just posting this here for now as a start - and might consider throwing this into a generator if it becomes popular. 
 
 *Ignore the references to Julian for now, that's my son and this whole template started because I'm helping him make a video game.* :laughing:
