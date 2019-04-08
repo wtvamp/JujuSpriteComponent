@@ -13,14 +13,23 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.scss?$/,
+                loaders: [
+                    "style-loader", 
+                    "typings-for-css-modules-loader?modules&sass&namedExport&camelCase", 
+                    "sass-loader"
+                ],
+                exclude: /node_modules/,
+            },
+            {
                 test: /\.tsx?$/,
                 loader: 'awesome-typescript-loader',
                 exclude: /node_modules/,
-            },
+            }
         ]
     },
     resolve: {
-        extensions: [".tsx", ".ts", ".js"]
+        extensions: [".tsx", ".ts", ".js", ".scss"]
     },
     externals: {
         // Don't bundle react or react-dom
