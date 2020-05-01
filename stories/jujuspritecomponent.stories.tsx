@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { Julian } from '../src/jujuspritecomponent';
 import { Student1 } from '../src/Student1/Student1';
-import { FinalSolution } from '../src/FinalSolution/FinalSolution';
+import { MickeySprite } from '../src/FinalSolution/MickeySprite';
 
 storiesOf('Student1', module)
   .addDecorator(withInfo)
@@ -33,11 +33,12 @@ storiesOf('Julian', module)
   )
 ;
 
-storiesOf('FinalSolution', module)
+storiesOf('MickeySprite', module)
   .addDecorator(withInfo)
   .add(
-    'FinalSolution 1\'s component with no name passed',
-    () => <FinalSolution />,
+    'This is a CSS animated sprite of THE mouse.',
+    () => 
+    <MickeySprite flipped={false} />,
     { info: { header: true, inline: true } }
   )
 ;

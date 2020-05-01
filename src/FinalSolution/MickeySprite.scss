@@ -3,10 +3,11 @@
         height: 68px;
         background: url('https://www.spriters-resource.com/resources/sheets/21/22901.png?updated=1460955230/resources/sheets/22/23955.gif?updated=1460955331') -28px -132px;
         animation: play 1s steps(12) infinite;
-        .flipped {
-            -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-        }
+}
+
+.flipped {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 
