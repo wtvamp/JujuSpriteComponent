@@ -5,7 +5,7 @@ interface Child {
     name?: string;
 }
 
-export class Student1 extends React.Component<Child, {}> {
+export class Student5 extends React.Component<Child, {}> {
   render() {
     return (
         <div className={styles.myName}>
