@@ -13,7 +13,7 @@ import { Student7 } from '../src/Student7/Student7';
 storiesOf('MickeySprite', module)
   .addDecorator(withInfo)
   .add(
-    'No name rendered',   
+    'Initial basic react component with name property passed in.',   
     () => <Julian name="Julian the Jujuman Thompson" />,
     { info: { header: true, inline: true } }
   )
