@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import { Julian } from '../src/jujuspritecomponent';
+import { Julian } from '../src/FinalSolution/jujuspritecomponent';
 import { Student1 } from '../src/Student1/Student1';
 import { Student2 } from '../src/Student2/Student2';
 import { Student3 } from '../src/Student3/Student3';
@@ -95,7 +95,7 @@ storiesOf('Students', module)
   )
 ;
 
-storiesOf('Julian', module)
+storiesOf('MickeySprite', module)
   .addDecorator(withInfo)
   .add(
     'No name rendered',   
