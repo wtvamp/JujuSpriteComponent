@@ -10,6 +10,14 @@ import { Student5 } from '../src/Student5/Student5';
 import { Student6 } from '../src/Student6/Student6';
 import { Student7 } from '../src/Student7/Student7';
 
+storiesOf('MickeySprite', module)
+  .addDecorator(withInfo)
+  .add(
+    'No name rendered',   
+    () => <Julian name="Julian the Jujuman Thompson" />,
+    { info: { header: true, inline: true } }
+  )
+;
 
 storiesOf('Students', module)
   .addDecorator(withInfo)
@@ -91,20 +99,6 @@ storiesOf('Students', module)
   .add(
     'Student 7\'s name property and rendering', 
     () => <Student7 name="Student7"></Student7>,
-    { info: { header: true, inline: true } }
-  )
-;
-
-storiesOf('MickeySprite', module)
-  .addDecorator(withInfo)
-  .add(
-    'No name rendered',   
-    () => <Julian />,
-    { info: { header: true, inline: true } }
-  )
-  .add(
-    'Passing name property and rendering', 
-    () => <Julian name="Jujuman"></Julian>,
     { info: { header: true, inline: true } }
   )
 ;
