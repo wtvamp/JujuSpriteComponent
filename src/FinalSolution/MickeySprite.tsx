@@ -2,24 +2,33 @@ import * as React from 'react';
 import { KeyboardEvent } from 'react';
 import * as styles from './MickeySprite.scss';
 
-interface SpriteDetails {
+interface SpriteDetailsProp {
     flipped: boolean;
 }
 
-export class MickeySprite extends React.Component<SpriteDetails, SpriteDetails> {
+interface SpriteDetailsState extends SpriteDetailsProp {
+    left: number;
+    top: number;
+}
+
+export class MickeySprite extends React.Component<SpriteDetailsProp, SpriteDetailsState> {
   
-  constructor(props: SpriteDetails) {
+  constructor(props: SpriteDetailsProp) {
     super(props);
 
-    this.state= {
-      flipped: this.props.flipped
+    this.state = {
+      flipped: this.props.flipped,
+      left: 0,
+      top: 0
     }
-
   }
 
   render() {
     return (
-        <div className={styles.character + " " + (this.state.flipped ? styles.flipped:"")}></div>
+        <div className={styles.character + " " + (this.state.flipped ? styles.flipped:"")} 
+             style={{position: 'relative', left: this.state.left + 'px', top: this.state.top + 'px'}}
+        >
+        </div>
     );
   }
 
@@ -33,10 +42,10 @@ export class MickeySprite extends React.Component<SpriteDetails, SpriteDetails> 
 
   handleKeyDown = (e: any) => {
     if (e.keyCode === 39) {
-      this.setState({flipped: false})
+      this.setState({flipped: false, left: this.state.left + 5})
     }
     else if (e.keyCode === 37) {
-      this.setState({flipped: true})
+      this.setState({flipped: true, left: this.state.left - 5})
     }
   }
 }
