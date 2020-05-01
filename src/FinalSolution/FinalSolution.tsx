@@ -8,8 +8,7 @@ interface Child {
 export class FinalSolution extends React.Component<Child, {}> {
   render() {
     return (
-        <div className={styles.myName}>
-        <p>My name is: {this.props.name}</p>
+        <div className={styles.character}>
         </div>
     );
   }
