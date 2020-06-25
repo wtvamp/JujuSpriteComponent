@@ -38,7 +38,7 @@ storiesOf('MickeySprite', module)
   .add(
     'This is a CSS animated sprite of THE mouse.',
     () => 
-    <MickeySprite flipped={false} />,
+    <MickeySprite flipped={true} />,
     { info: { header: true, inline: true } }
   )
 ;

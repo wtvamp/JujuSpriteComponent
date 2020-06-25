@@ -1,8 +1,8 @@
 .character {
-        width: 35px;
-        height: 68px;
-        background: url('https://www.spriters-resource.com/resources/sheets/21/22901.png?updated=1460955230/resources/sheets/22/23955.gif?updated=1460955331') -28px -132px;
-        animation: play 1s steps(12) infinite;
+        width: 82px;
+        height: 58px;
+        background: url('./Dog.png') 0px -64px;
+        animation: play 1s steps(6) infinite;
 }
 
 .flipped {
@@ -12,5 +12,5 @@
 
 
 @keyframes play {
-    100% { background-position: -592px -132px; }
+    100% { background-position: 540px -64px; }
  }

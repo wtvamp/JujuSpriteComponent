@@ -42,10 +42,10 @@ export class MickeySprite extends React.Component<SpriteDetailsProp, SpriteDetai
 
   handleKeyDown = (e: any) => {
     if (e.keyCode === 39) {
-      this.setState({flipped: false, left: this.state.left + 5})
+      this.setState({flipped: true, left: this.state.left + 5})
     }
     else if (e.keyCode === 37) {
-      this.setState({flipped: true, left: this.state.left - 5})
+      this.setState({flipped: false, left: this.state.left - 5})
     }
     else if (e.keyCode === 38) {
       this.setState({top: this.state.top - 5})
