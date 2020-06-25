@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { KeyboardEvent } from 'react';
-import * as styles from './MickeySprite.scss';
+import * as styles from './PuppySprite.scss';
 
 interface SpriteDetailsProp {
     flipped: boolean;
@@ -11,7 +11,7 @@ interface SpriteDetailsState extends SpriteDetailsProp {
     top: number;
 }
 
-export class MickeySprite extends React.Component<SpriteDetailsProp, SpriteDetailsState> {
+export class PuppySprite extends React.Component<SpriteDetailsProp, SpriteDetailsState> {
   
   constructor(props: SpriteDetailsProp) {
     super(props);
