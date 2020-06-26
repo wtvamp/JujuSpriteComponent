@@ -13,7 +13,6 @@ storiesOf('PuppySprite', module)
     <PuppySpriteStep1 />,
     { info: { header: true, inline: true } }
   )
- .addDecorator(withInfo)
   .add(
     'This is a CSS animated sprite of a puppy - final.',
     () => 
