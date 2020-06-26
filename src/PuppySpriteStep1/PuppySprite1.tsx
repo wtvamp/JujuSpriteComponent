@@ -1,11 +1,11 @@
 import * as React from 'react';
-//import * as styles from './PuppySprite1.scss';
+import * as styles from './PuppySprite1.scss';
 
 export class PuppySpriteStep1 extends React.Component {
   render() {
     return (
-        <div>
-        </div>
+      <div className={styles.character}>
+      </div>
     );
   }
 }

@@ -2,7 +2,7 @@
     width: 82px;
     height: 58px;
     background: url('./PuppySprite.png') 0px -64px;
-    animation: play 1s steps(6) infinite;
+    animation: walkdog 1s steps(6) infinite;
 }
 
 .flipped {
@@ -11,6 +11,6 @@
 }
 
 
-@keyframes play {
+@keyframes walkdog {
     100% { background-position: 540px -64px; }
  }
