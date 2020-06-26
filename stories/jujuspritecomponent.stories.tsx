@@ -2,7 +2,7 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { Julian } from '../src/jujuspritecomponent';
-import { PuppySprite } from '../src/FinalSolution/PuppySprite';
+import { PuppySprite } from '../src/Puppy/PuppySprite';
 
 storiesOf('Julian', module)
   .addDecorator(withInfo)
@@ -21,7 +21,7 @@ storiesOf('Julian', module)
 storiesOf('PuppySprite', module)
   .addDecorator(withInfo)
   .add(
-    'This is a CSS animated sprite of THE mouse.',
+    'This is a CSS animated sprite of a puppy.',
     () => 
     <PuppySprite flipped={true} />,
     { info: { header: true, inline: true } }
