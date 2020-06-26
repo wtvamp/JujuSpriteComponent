@@ -1,0 +1,10 @@
+.character {
+    background: url('./PuppySprite.png') 0px -64px;
+    width: 82px;
+    height: 58px;
+    animation: walkdog 1s steps(6) infinite;
+ } 
+
+ @keyframes walkdog {
+    100% { background-position: 540px -64px; }
+ }
