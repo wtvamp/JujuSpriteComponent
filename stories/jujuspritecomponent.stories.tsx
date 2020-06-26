@@ -2,7 +2,7 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { Julian } from '../src/jujuspritecomponent';
-import { PuppySprite } from '../src/Puppy/PuppySprite';
+import { PuppySprite } from '../src/PuppySprite/PuppySprite';
 
 storiesOf('Julian', module)
   .addDecorator(withInfo)
