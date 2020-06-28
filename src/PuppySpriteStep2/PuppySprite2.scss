@@ -8,3 +8,8 @@
  @keyframes walkdog {
     100% { background-position: 540px -64px; }
  }
+
+ .flipped {
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}

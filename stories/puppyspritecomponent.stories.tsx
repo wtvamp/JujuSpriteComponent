@@ -15,9 +15,15 @@ storiesOf('PuppySprite', module)
     { info: { header: true, inline: true } }
   )
   .add(
-    'This is a CSS animated sprite of a puppy - step 2.',
+    'This is a CSS animated sprite of a puppy - step 2 without flipped.',
     () => 
     <PuppySpriteStep2 />,
+    { info: { header: true, inline: true } }
+  )
+  .add(
+    'This is a CSS animated sprite of a puppy - step 2 with flipped.',
+    () => 
+    <PuppySpriteStep2 flipped={true} />,
     { info: { header: true, inline: true } }
   )
   .add(
