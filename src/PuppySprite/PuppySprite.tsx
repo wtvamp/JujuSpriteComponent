@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { KeyboardEvent } from 'react';
 import * as styles from './PuppySprite.scss';
 
 interface SpriteDetailsProp {
