@@ -14,10 +14,18 @@ module.exports = {
         rules: [
             {
                 test: /\.scss?$/,
-                loaders: [
-                    "style-loader", 
-                    "typings-for-css-modules-loader?modules&sass&namedExport&camelCase", 
-                    "sass-loader"
+                use: [
+                    "style-loader",
+                    {
+                        loader: "@teamsupercell/typings-for-css-modules-loader"
+                    },
+                    {
+                        loader: "css-loader",
+                        options: {
+                            camelCase: true,
+                            modules: true
+                        }
+                    }
                 ],
                 exclude: /node_modules/,
             },
